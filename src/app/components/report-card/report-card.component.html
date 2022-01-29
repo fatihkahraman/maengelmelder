@@ -1,0 +1,15 @@
+<div class="card">
+    <img [src]="image" class="card-img-top" [alt]="alt_image">
+    <div class="card-img-overlay">
+      <fa-icon *ngIf="showStar" (click)="saveReport()" [icon]="faStar" class="fa-xs icon-star star-icon"></fa-icon>
+      <fa-icon *ngIf="showCross" (click)="removeReport()" [icon]="faTimes" class="fa-xs cross-icon"></fa-icon>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{ report.text }}</h5>
+      <p class="card-text"><small class="text-muted">Kategorie: {{ report.message_type.name }}</small></p>
+      <div class="d-flex justify-content-between align-items-end">
+        <a class="btn btn-primary">Details</a>
+        <p class="card-text"><small class="text-muted">Status</small></p>
+      </div>
+    </div>
+</div>

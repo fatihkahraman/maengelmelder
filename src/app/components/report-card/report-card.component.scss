@@ -1,0 +1,15 @@
+.star-icon {
+    color: var(--color-primary);
+    padding: 5px;
+    background-color: var(--color-dark);
+    border: 2px solid var(--color-primary);
+    border-radius: 50%;
+}
+
+.cross-icon {
+    color: var(--color-secondary);
+    padding: 5px;
+    background-color: var(--color-light);
+    border: 2px solid var(--color-secondary);
+    border-radius: 50%;
+}

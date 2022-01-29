@@ -1,0 +1,7 @@
+<div class="container pt-3">
+    <div class="row">
+        <div *ngFor="let report of reports" class="col-12 col-md-6 col-lg-3 mb-3">
+            <app-report-card [report]="report" [showStar]="false" [showCross]="true" (removed)="updateCards()"></app-report-card>
+        </div>
+    </div>
+</div>

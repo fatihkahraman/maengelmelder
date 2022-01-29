@@ -1,0 +1,17 @@
+<div class="d-block d-flex align-items-center bg-light  p-2 ps-3 pe-3 header-wrapper">
+  <div class="d-flex justify-content-start">
+    <a [routerLink]="''">
+      <fa-icon [icon]="faHome" class="fa-lg"></fa-icon>
+    </a>
+  </div>
+
+    <div>
+      <h4 class="text-center">{{ title }}</h4>
+    </div>
+  
+    <div class="d-flex justify-content-end">
+      <a routerLink="saved">
+        <fa-icon [icon]="faStar" class="fa-lg"></fa-icon>
+      </a>
+    </div>
+  </div>

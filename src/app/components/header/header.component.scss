@@ -1,0 +1,11 @@
+.header-wrapper {
+    // background-color: --color-dark;
+  
+    > div {
+      width: 33.3333%;
+    }
+}
+  
+.header-wrapper, a {
+    color: var(--color-dark);
+}

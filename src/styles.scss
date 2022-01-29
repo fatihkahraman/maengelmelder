@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+
+@import '~ngx-toastr/toastr';
+
+:root {
+    --color-dark: #000000;
+    --color-light: whitesmoke;
+    --color-primary: yellow;
+    --color-secondary: red;
+}
