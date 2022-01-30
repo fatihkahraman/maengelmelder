@@ -9,6 +9,7 @@ import { Report } from '../models/report.model';
   providedIn: 'root'
 })
 export class ReportService {
+  // Base url of the API is stored in the environment file.
   private readonly baseUrl = environment.apiUrl;
 
   private readonly httpOptions = {
@@ -17,11 +18,14 @@ export class ReportService {
     })
   };
 
+  // Inject HttpClient. Used to make HTTP requests.
   constructor(private http: HttpClient) { }
 
+  // GET request to retreive all reports.
+  // Returns an Observable, so that Observers can subscribe.
   getReports(): Observable<Response<Report[]>> {
     return this.http.get<Response<Report[]>>(
-      this.baseUrl + 'domain/32/message?sort=-created&fields=id,title,text,thumbnail_sq64,responsible,message_type&style=default',
+      this.baseUrl + 'domain/32/message?sort=-created&fields=id,title,text,state,thumbnail_sq64,responsible,message_type&style=default',
       this.httpOptions
     );
   }

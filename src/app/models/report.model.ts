@@ -4,6 +4,7 @@ export interface Report {
     message_type: {
         id: number,
         name: string
-    }
+    },
+    state: string,
     thumbnail_sq64: string
 }

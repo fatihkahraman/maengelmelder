@@ -1,6 +1,9 @@
 <div class="container pt-3">
+    <!-- Refresh button -->
     <fa-icon (click)="refreshReports()" [icon]="faSync" class="btn btn-secondary fa-lg mb-3"></fa-icon>
+
     <div class="row">
+        <!-- Container of all reports (cards) -->
         <div *ngFor="let report of reports" class="col-12 col-md-6 col-lg-3 mb-3">
             <app-report-card [report]="report" [showStar]="true" [showCross]="false"></app-report-card>
         </div>
