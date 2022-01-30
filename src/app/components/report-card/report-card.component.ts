@@ -28,6 +28,7 @@ export class ReportCardComponent implements OnInit {
   ngOnInit(): void {
     // Check if thumbnail (image) of report is null. If not null, assign it to Member variable `image`,
     // which is used in the template.
+    // console.log(this.report.thumbnail_sq64);
     if (this.report.thumbnail_sq64) {
       this.image = this.report.thumbnail_sq64;
     } else {

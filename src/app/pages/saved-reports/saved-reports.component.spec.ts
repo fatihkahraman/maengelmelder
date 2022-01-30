@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ToastrModule } from 'ngx-toastr';
 
 import { SavedReportsComponent } from './saved-reports.component';
 
@@ -8,6 +9,7 @@ describe('SavedReportsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [ToastrModule.forRoot()],
       declarations: [ SavedReportsComponent ]
     })
     .compileComponents();

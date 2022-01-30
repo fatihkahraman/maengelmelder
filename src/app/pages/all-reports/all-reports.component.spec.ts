@@ -1,4 +1,6 @@
+import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ToastrModule } from 'ngx-toastr';
 
 import { AllReportsComponent } from './all-reports.component';
 
@@ -8,6 +10,7 @@ describe('AllReportsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [ToastrModule.forRoot(), HttpClientModule],
       declarations: [ AllReportsComponent ]
     })
     .compileComponents();
