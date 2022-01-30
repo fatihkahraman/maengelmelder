@@ -1,7 +1,10 @@
 {
   "name": "maengelmelder",
   "version": "0.0.0",
-  "engines": { "node": "16.13.1", "npm": "8.1.2" },
+  "engines": {
+    "node": "16.13.1",
+    "npm": "8.1.2"
+  },
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
@@ -30,7 +33,7 @@
     "express": "^4.17.2",
     "ngx-toastr": "^14.2.1",
     "path": "^0.12.7",
-    "rxjs": "~7.5.0",
+    "rxjs": "^6.6.7",
     "tslib": "^2.3.0",
     "typescript": "~4.5.2",
     "zone.js": "~0.11.4"
